@@ -65,8 +65,8 @@ To configure Fiddler Everywhere as a reverse proxy, follow these steps:
    - Create a rule to redirect all requests made to Fiddler's port (`8866`) to the server's original port (`8443`).
 
    Example rule:
-   - **Match** a `Host` that contains `:8866`
-   - **Action**: Find `:8866` and replace with `:8443`
+   - **Conditions**: Match a `Host` that contains `:8866`
+   - **Actions**: Create `Update URL` action by using `Find and replace` to find `:8866` and replace with `:8443`
 
    ![creating a reverse proxy rule in Fiddler Evereywhere](./images/fiddler-reverse-proxy-rule.png)
 

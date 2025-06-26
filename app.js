@@ -2,9 +2,9 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 const xmlHttp = new XMLHttpRequest();
 try {
-    /* T
-    The default server port is 8843 (when Fiddler is not in the reverse proxy mode the client app should use that port).
-    However, in this case, we must set port 8877, which corresponds to the "Client Port" value within the "Reverse Proxy" section of the Fiddler app
+    /* 
+        The default server port is 8843 (when Fiddler is not in the reverse proxy mode the client app should use that port).
+        However, in this case, set port 8877, which corresponds to the "Client Port" within the "Reverse Proxy" section
     */
     xmlHttp.open("GET", 'http://localhost:8877/jsonData', false);
 
